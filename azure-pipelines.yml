@@ -12,6 +12,11 @@ pool:
 steps:
 - task: Maven@3
 public class AddTwoNumbers{
+- task: CmdLine@2
+  inputs:
+    script: |
+      javac HelloWorld.java
+      java HelloWorld
   public static void main(String[] args){
     int num1=5,num2=15,sum;
     sum=num1+num2;
